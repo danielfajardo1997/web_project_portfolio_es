@@ -40,17 +40,33 @@ Cuenta con experiencia en el uso de Git y GitHub para el control de versiones y 
 ## 🌐 Demo del proyecto
 
 🔗 Ver proyecto en línea:
-👉 (agrega aquí tu link de GitHub Pages)
+👉 https://danielfajardo1997.github.io/web_project_portfolio_es/
 
 ---
 
 ## 📂 Repositorio
 
 🔗 Código fuente:
-👉 https://github.com/danielfajardo1997/web_project_potrfolio_es
+👉 https://github.com/danielfajardo1997/web_project_portfolio_es
+
+---
+
+## 📁 Proyectos destacados
+
+**Proyectos web:**
+* [Triple Espresso](https://github.com/danielfajardo1997/web_project_coffeeshop_es) — landing page de cafetería (HTML, CSS, Flexbox)
+* [Around The U.S.](https://github.com/danielfajardo1997/web_project_around_es) — app interactiva (TypeScript, POO)
+* [Rastreador de gastos](https://github.com/danielfajardo1997/web_project_expenses_es) — app de finanzas personales (JavaScript)
+
+**Mis proyectos:**
+* [Clasificación NLP de incidentes industriales](https://github.com/danielfajardo1997/ai-psm-incident-classification) — paper CISAP12 (Python, NLP)
+* [CSNE-SoC](https://github.com/danielfajardo1997/CSNE-SoC) — motor neuronal sistólico en FPGA (VHDL)
+* AquaCartagena — sistema edge-IoT de monitoreo de calidad del agua en la Bahía de Cartagena
 
 ---
 
 ## 📬 Contacto
 
+* Email: danielfajardoc45@gmail.com
 * GitHub: https://github.com/danielfajardo1997
+* LinkedIn: https://www.linkedin.com/in/daniel-fajardo-4b6673171

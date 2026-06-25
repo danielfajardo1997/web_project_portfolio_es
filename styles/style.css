@@ -90,6 +90,25 @@ body::before {
   object-fit: cover;
 }
 
+.card__image--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e, #2d1f4f);
+}
+
+.card__tag {
+  position: relative;
+  z-index: 2;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  opacity: 0.85;
+  text-align: center;
+  padding: 0 20px;
+}
+
 /* =========================
    🖼 IMAGEN + OVERLAY
    ========================= */

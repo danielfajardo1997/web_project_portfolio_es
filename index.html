@@ -51,64 +51,161 @@
         <img src="images/chatgpt.svg" alt="ChatGPT">
       </div>
     </section>
-<h2 class="project-title">Proyectos destacados</h2>
-    <!-- PROYECTOS -->
+<h2 class="project-title">Proyectos web</h2>
+    <!-- PROYECTOS WEB -->
     <section class="projects">
-
 
       <div class="projects__grid">
 
-        <!-- CARD 1 -->
+        <!-- CARD 1: Triple Espresso (cafetería) -->
         <article class="card">
 
-          <!-- CONTENEDOR IMAGEN + OVERLAY -->
           <div class="card__image">
-            <img src="images/coffee-web.svg" alt="Proyecto cafetería">
+            <img src="images/coffee-web.svg" alt="Proyecto cafetería Triple Espresso">
             <div class="card__overlay"></div>
 
-            <!-- ICONOS ENCIMA -->
             <div class="card__links">
-              <a href="#" target="_blank">
+              <a href="https://danielfajardo1997.github.io/web_project_coffeeshop_es/" target="_blank">
                 <img src="images/demo-icon.svg" alt="Ver demo">
               </a>
-              <a href="#" target="_blank">
+              <a href="https://github.com/danielfajardo1997/web_project_coffeeshop_es" target="_blank">
                 <img src="images/github-icon.svg" alt="Ver código">
               </a>
             </div>
           </div>
 
-          <!-- CONTENIDO -->
           <div class="card__content">
-            <h3 class="card__title">Página web de una cafetería</h3>
+            <h3 class="card__title">Triple Espresso — Página de cafetería</h3>
             <p class="card__description">
               Landing page responsiva con HTML, CSS y Flexbox, siguiendo un diseño
-              de Figma. Proyecto publicado en GitHub Pages.
+              de Figma. Publicado en GitHub Pages.
             </p>
           </div>
 
         </article>
 
-        <!-- CARD 2 -->
+        <!-- CARD 2: Around The US -->
         <article class="card">
 
-          <div class="card__image">
-            <img src="images/js-web.svg" alt="Proyecto JavaScript">
+          <div class="card__image card__image--placeholder">
+            <span class="card__tag">TypeScript · POO</span>
             <div class="card__overlay"></div>
 
             <div class="card__links">
-              <a href="#" target="_blank">
-                <img src="images/demo-icon.svg" alt="Ver demo">
-              </a>
-              <a href="#" target="_blank">
+              <a href="https://github.com/danielfajardo1997/web_project_around_es" target="_blank">
                 <img src="images/github-icon.svg" alt="Ver código">
               </a>
             </div>
           </div>
 
           <div class="card__content">
-            <h3 class="card__title">Proyecto JavaScript</h3>
+            <h3 class="card__title">Around The U.S.</h3>
             <p class="card__description">
-              Aplicación interactiva desarrollada con JavaScript puro.
+              Aplicación web para explorar y compartir lugares emblemáticos de
+              EE. UU.: edición de perfil, tarjetas con "me gusta", eliminación y
+              vista de imagen completa. Construida con TypeScript y POO.
+            </p>
+          </div>
+
+        </article>
+
+        <!-- CARD 3: Rastreador de gastos -->
+        <article class="card">
+
+          <div class="card__image">
+            <img src="images/js-web.svg" alt="Proyecto rastreador de gastos">
+            <div class="card__overlay"></div>
+
+            <div class="card__links">
+              <a href="https://github.com/danielfajardo1997/web_project_expenses_es" target="_blank">
+                <img src="images/github-icon.svg" alt="Ver código">
+              </a>
+            </div>
+          </div>
+
+          <div class="card__content">
+            <h3 class="card__title">Rastreador de gastos</h3>
+            <p class="card__description">
+              Aplicación interactiva en JavaScript puro para registrar y
+              visualizar gastos personales organizados por categoría.
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <h2 class="project-title">Mis proyectos</h2>
+    <!-- OTROS PROYECTOS (IA, hardware, investigación) -->
+    <section class="projects">
+
+      <div class="projects__grid">
+
+        <!-- CARD 4: Clasificación NLP de incidentes (CISAP12) -->
+        <article class="card">
+
+          <div class="card__image card__image--placeholder">
+            <span class="card__tag">Python · NLP · IA</span>
+            <div class="card__overlay"></div>
+
+            <div class="card__links">
+              <a href="https://github.com/danielfajardo1997/ai-psm-incident-classification" target="_blank">
+                <img src="images/github-icon.svg" alt="Ver código">
+              </a>
+            </div>
+          </div>
+
+          <div class="card__content">
+            <h3 class="card__title">Clasificación de causas de accidentes industriales con NLP</h3>
+            <p class="card__description">
+              Pipeline de NLP (Word2Vec, GloVe, SBERT, BERTopic) para clasificar
+              automáticamente causas de accidentes industriales en reportes
+              eMARS. Investigación publicada como paper en CISAP12.
+            </p>
+          </div>
+
+        </article>
+
+        <!-- CARD 5: CSNE-SoC -->
+        <article class="card">
+
+          <div class="card__image card__image--placeholder">
+            <span class="card__tag">VHDL · FPGA · SoC</span>
+            <div class="card__overlay"></div>
+
+            <div class="card__links">
+              <a href="https://github.com/danielfajardo1997/CSNE-SoC" target="_blank">
+                <img src="images/github-icon.svg" alt="Ver código">
+              </a>
+            </div>
+          </div>
+
+          <div class="card__content">
+            <h3 class="card__title">CSNE-SoC — Motor neuronal sistólico en FPGA</h3>
+            <p class="card__description">
+              Co-diseño hardware/software de un arreglo sistólico configurable de
+              unidades MAC sobre un SoC-FPGA Cyclone V (DE10-Nano), con
+              integración ARM Cortex-A9 + fábrica FPGA vía AXI.
+            </p>
+          </div>
+
+        </article>
+
+        <!-- CARD 6: AquaCartagena -->
+        <article class="card">
+
+          <div class="card__image card__image--placeholder">
+            <span class="card__tag">IoT · Edge · LoRa</span>
+            <div class="card__overlay"></div>
+          </div>
+
+          <div class="card__content">
+            <h3 class="card__title">AquaCartagena — Monitoreo de calidad del agua</h3>
+            <p class="card__description">
+              Sistema edge-IoT con nodos ESP32 vía LoRa y gateway Raspberry Pi
+              para monitorear calidad del agua en la Bahía de Cartagena, con
+              almacenamiento en InfluxDB y dashboards en Grafana.
             </p>
           </div>
 
@@ -123,13 +220,11 @@
   <footer class="footer" id="contact">
 
     <h2 class="footer__title">Contacto</h2>
-    <p class="footer__sub-title">student@tripleten.com</p>
+    <p class="footer__sub-title">danielfajardoc45@gmail.com</p>
 
     <div class="social-media">
-      <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
-      <a href="#"><img src="images/x.svg" alt="X"></a>
+      <a href="https://www.linkedin.com/in/daniel-fajardo-4b6673171" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://github.com/danielfajardo1997" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
     </div>
 
   </footer>
