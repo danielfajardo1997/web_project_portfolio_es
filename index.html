@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Daniel Fajardo — Portfolio</title>
 
   <link rel="stylesheet" href="./styles/normalize.css" />
   <link rel="stylesheet" href="./styles/style.css" />
@@ -11,8 +11,20 @@
 
 <body>
 
+  <!-- ================= NAV ================= -->
+  <nav class="nav">
+    <a href="#inicio" class="nav__logo">DF</a>
+    <div class="nav__links">
+      <a href="#inicio">Inicio</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos-web">Proyectos</a>
+      <a href="#mis-proyectos">Mis proyectos</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </nav>
+
   <!-- ================= HEADER ================= -->
-  <header class="header">
+  <header class="header" id="inicio">
     <div class="header__div-info">
       <h1 class="title">Daniel<br>Fajardo</h1>
       <h2 class="sub-title">
@@ -39,19 +51,20 @@
   <main class="main">
 
     <!-- HABILIDADES -->
-    <section class="tools">
+    <section class="tools" id="habilidades">
       <h2 class="main-title">Habilidades y herramientas</h2>
 
       <div class="tools__icons">
-        <img src="images/html.svg" alt="HTML">
-        <img src="images/css.svg" alt="CSS">
-        <img src="images/js.svg" alt="JavaScript">
-        <img src="images/git.svg" alt="Git">
-        <img src="images/github.svg" alt="GitHub">
-        <img src="images/chatgpt.svg" alt="ChatGPT">
+        <div class="tool"><img src="images/html.svg" alt="HTML"><span>HTML</span></div>
+        <div class="tool"><img src="images/css.svg" alt="CSS"><span>CSS</span></div>
+        <div class="tool"><img src="images/js.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="tool"><img src="images/git.svg" alt="Git"><span>Git</span></div>
+        <div class="tool"><img src="images/github.svg" alt="GitHub"><span>GitHub</span></div>
+        <div class="tool"><img src="images/chatgpt.svg" alt="ChatGPT"><span>ChatGPT</span></div>
       </div>
     </section>
-<h2 class="project-title">Proyectos web</h2>
+
+    <h2 class="project-title" id="proyectos-web">Proyectos web</h2>
     <!-- PROYECTOS WEB -->
     <section class="projects">
 
@@ -75,6 +88,7 @@
           </div>
 
           <div class="card__content">
+            <span class="card__badge">HTML · CSS · Flexbox</span>
             <h3 class="card__title">Triple Espresso — Página de cafetería</h3>
             <p class="card__description">
               Landing page responsiva con HTML, CSS y Flexbox, siguiendo un diseño
@@ -99,6 +113,7 @@
           </div>
 
           <div class="card__content">
+            <span class="card__badge">TypeScript · POO</span>
             <h3 class="card__title">Around The U.S.</h3>
             <p class="card__description">
               Aplicación web para explorar y compartir lugares emblemáticos de
@@ -124,6 +139,7 @@
           </div>
 
           <div class="card__content">
+            <span class="card__badge">JavaScript</span>
             <h3 class="card__title">Rastreador de gastos</h3>
             <p class="card__description">
               Aplicación interactiva en JavaScript puro para registrar y
@@ -136,7 +152,7 @@
       </div>
     </section>
 
-    <h2 class="project-title">Mis proyectos</h2>
+    <h2 class="project-title" id="mis-proyectos">Mis proyectos</h2>
     <!-- OTROS PROYECTOS (IA, hardware, investigación) -->
     <section class="projects">
 
@@ -145,8 +161,8 @@
         <!-- CARD 4: Clasificación NLP de incidentes (CISAP12) -->
         <article class="card">
 
-          <div class="card__image card__image--placeholder">
-            <span class="card__tag">Python · NLP · IA</span>
+          <div class="card__image">
+            <img src="images/ai-architecture.png" alt="Arquitectura de un modelo de IA tipo Transformer">
             <div class="card__overlay"></div>
 
             <div class="card__links">
@@ -157,6 +173,7 @@
           </div>
 
           <div class="card__content">
+            <span class="card__badge">Python · NLP · IA</span>
             <h3 class="card__title">Clasificación de causas de accidentes industriales con NLP</h3>
             <p class="card__description">
               Pipeline de NLP (Word2Vec, GloVe, SBERT, BERTopic) para clasificar
@@ -170,8 +187,8 @@
         <!-- CARD 5: CSNE-SoC -->
         <article class="card">
 
-          <div class="card__image card__image--placeholder">
-            <span class="card__tag">VHDL · FPGA · SoC</span>
+          <div class="card__image">
+            <img src="images/tang-nano-fpga.jpg" alt="Tarjeta de desarrollo FPGA Sipeed Tang Nano">
             <div class="card__overlay"></div>
 
             <div class="card__links">
@@ -182,11 +199,12 @@
           </div>
 
           <div class="card__content">
+            <span class="card__badge">VHDL · FPGA · SoC</span>
             <h3 class="card__title">CSNE-SoC — Motor neuronal sistólico en FPGA</h3>
             <p class="card__description">
               Co-diseño hardware/software de un arreglo sistólico configurable de
-              unidades MAC sobre un SoC-FPGA Cyclone V (DE10-Nano), con
-              integración ARM Cortex-A9 + fábrica FPGA vía AXI.
+              unidades MAC sobre un SoC-FPGA, con integración ARM Cortex-A9 +
+              fábrica FPGA vía AXI.
             </p>
           </div>
 
@@ -195,12 +213,13 @@
         <!-- CARD 6: AquaCartagena -->
         <article class="card">
 
-          <div class="card__image card__image--placeholder">
-            <span class="card__tag">IoT · Edge · LoRa</span>
+          <div class="card__image">
+            <img src="images/esp32-board.jpg" alt="Tarjeta de desarrollo ESP32 usada en los nodos sensores">
             <div class="card__overlay"></div>
           </div>
 
           <div class="card__content">
+            <span class="card__badge">IoT · Edge · LoRa</span>
             <h3 class="card__title">AquaCartagena — Monitoreo de calidad del agua</h3>
             <p class="card__description">
               Sistema edge-IoT con nodos ESP32 vía LoRa y gateway Raspberry Pi
