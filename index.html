@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniel Fajardo — Portfolio</title>
+  <title>Daniel Fajardo | Desarrollador Web & Investigador</title>
+  <meta name="description" content="Portfolio de Daniel Fajardo: proyectos web, IA, hardware e investigación." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/normalize.css" />
   <link rel="stylesheet" href="./styles/style.css" />
@@ -11,242 +16,313 @@
 
 <body>
 
-  <!-- ================= NAV ================= -->
-  <nav class="nav">
-    <a href="#inicio" class="nav__logo">DF</a>
-    <div class="nav__links">
-      <a href="#inicio">Inicio</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#proyectos-web">Proyectos</a>
-      <a href="#mis-proyectos">Mis proyectos</a>
-      <a href="#contact">Contacto</a>
+  <!-- ================= HEADER / HERO ================= -->
+  <header class="header" id="top">
+    <div class="row">
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Proyectos web</a></li>
+          <li class="nav__item"><a href="#other-work" class="nav__link">Mis proyectos</a></li>
+          <li class="nav__item"><a href="#frameworks" class="nav__link">Habilidades</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
 
-  <!-- ================= HEADER ================= -->
-  <header class="header" id="inicio">
-    <div class="header__div-info">
-      <h1 class="title">Daniel<br>Fajardo</h1>
-      <h2 class="sub-title">
-        Desarrollador Full-Stack Junior | TypeScript, React, Node.js
-      </h2>
-
-      <p class="abstract">
-        Desarrollador web junior con experiencia práctica creando interfaces limpias y responsivas con HTML, CSS, JavaScript y React, así como implementando lógica básica de back-end. Ha trabajado en proyectos formativos que siguen procesos reales de desarrollo, usando Git, GitHub y Figma. Disfruto colaborar en equipo, mantener un código claro y resolver problemas de forma estructurada. Motivado por seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades para crecer como desarrollador.
-      </p>
-
-      <div class="menu">
-        <a href="/cv.pdf" download class="menu__button">Descargar CV</a>
-        <a href="https://github.com/danielfajardo1997" target="_blank" class="menu__link">GitHub</a>
-        <a href="#contact" class="menu__nav-link">Hablemos</a>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary"><span>Daniel Fajardo</span></h1>
+        <p>Desarrollador Full-Stack Junior · Investigador en IA y hardware embebido.</p>
+        <a href="#contact" class="btn btn--accent">Hablemos</a>
       </div>
-    </div>
-
-    <div class="header__div-image">
-      <img src="images/babuino.jpg" alt="Foto de Daniel Fajardo" />
     </div>
   </header>
 
-  <!-- ================= MAIN ================= -->
-  <main class="main">
+  <main role="main">
 
-    <!-- HABILIDADES -->
-    <section class="tools" id="habilidades">
-      <h2 class="main-title">Habilidades y herramientas</h2>
+    <!-- ================= PROYECTOS WEB ================= -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>Proyectos web</h2>
+        <div class="work__boxes">
 
-      <div class="tools__icons">
-        <div class="tool"><img src="images/html.svg" alt="HTML"><span>HTML</span></div>
-        <div class="tool"><img src="images/css.svg" alt="CSS"><span>CSS</span></div>
-        <div class="tool"><img src="images/js.svg" alt="JavaScript"><span>JavaScript</span></div>
-        <div class="tool"><img src="images/git.svg" alt="Git"><span>Git</span></div>
-        <div class="tool"><img src="images/github.svg" alt="GitHub"><span>GitHub</span></div>
-        <div class="tool"><img src="images/chatgpt.svg" alt="ChatGPT"><span>ChatGPT</span></div>
+          <!-- Triple Espresso -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Triple Espresso — Página de cafetería</h3>
+              <p class="work__text-bold">Resumen</p>
+              <p>
+                Landing page responsiva para una cafetería ficticia, desarrollada
+                con HTML semántico y CSS (Flexbox), siguiendo un diseño de Figma
+                con metodología BEM para mantener el código organizado.
+              </p>
+              <p class="work__text-bold">Tecnologías</p>
+              <ul class="work__list">
+                <li>HTML5 semántico y CSS3 con Flexbox.</li>
+                <li>Metodología BEM para estructura escalable.</li>
+                <li>Diseño responsivo (móvil, tablet y escritorio).</li>
+                <li>Publicado en GitHub Pages.</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://danielfajardo1997.github.io/web_project_coffeeshop_es/" target="_blank" class="link__text">
+                  Ver sitio <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/danielfajardo1997/web_project_coffeeshop_es" title="Ver código" target="_blank">
+                  <img src="images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="images/coffee-web.svg" class="work__image" alt="Triple Espresso">
+            </div>
+          </div>
+
+          <!-- Around The US -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Around The U.S.</h3>
+              <p class="work__text-bold">Resumen</p>
+              <p>
+                Aplicación web para explorar y compartir lugares emblemáticos de
+                Estados Unidos, construida con TypeScript aplicando principios de
+                Programación Orientada a Objetos para un código modular y
+                mantenible.
+              </p>
+              <p class="work__text-bold">Tecnologías</p>
+              <ul class="work__list">
+                <li>TypeScript con clases y POO.</li>
+                <li>Edición de perfil, tarjetas con "me gusta" y eliminación.</li>
+                <li>Popup de imagen en tamaño completo.</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/danielfajardo1997/web_project_around_es" title="Ver código" target="_blank">
+                  <img src="images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <div class="work__image work__image--placeholder">
+                <span>TypeScript · POO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expenses -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Rastreador de gastos</h3>
+              <p class="work__text-bold">Resumen</p>
+              <p>
+                Aplicación interactiva en JavaScript puro para registrar y
+                visualizar gastos personales organizados por categoría, sin
+                frameworks externos.
+              </p>
+              <p class="work__text-bold">Tecnologías</p>
+              <ul class="work__list">
+                <li>JavaScript (DOM, manejo de eventos, render dinámico).</li>
+                <li>Organización por categorías y totales.</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/danielfajardo1997/web_project_expenses_es" title="Ver código" target="_blank">
+                  <img src="images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="images/js-web.svg" class="work__image" alt="Rastreador de gastos">
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <h2 class="project-title" id="proyectos-web">Proyectos web</h2>
-    <!-- PROYECTOS WEB -->
-    <section class="projects">
+    <!-- ================= MIS PROYECTOS ================= -->
+    <section class="work" id="other-work">
+      <div class="row">
+        <h2>Mis proyectos</h2>
+        <div class="work__boxes">
 
-      <div class="projects__grid">
-
-        <!-- CARD 1: Triple Espresso (cafetería) -->
-        <article class="card">
-
-          <div class="card__image">
-            <img src="images/coffee-web.svg" alt="Proyecto cafetería Triple Espresso">
-            <div class="card__overlay"></div>
-
-            <div class="card__links">
-              <a href="https://danielfajardo1997.github.io/web_project_coffeeshop_es/" target="_blank">
-                <img src="images/demo-icon.svg" alt="Ver demo">
-              </a>
-              <a href="https://github.com/danielfajardo1997/web_project_coffeeshop_es" target="_blank">
-                <img src="images/github-icon.svg" alt="Ver código">
-              </a>
+          <!-- NLP -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Clasificación de causas de accidentes industriales con NLP</h3>
+              <p class="work__text-bold">Resumen</p>
+              <p>
+                Pipeline de NLP que compara Word2Vec, GloVe y SBERT como
+                embeddings, y usa BERTopic para descubrir y etiquetar
+                automáticamente causas de accidentes industriales en reportes
+                eMARS, con clasificadores SVM evaluados por validación cruzada.
+              </p>
+              <p class="work__text-bold">Tecnologías</p>
+              <ul class="work__list">
+                <li>Python, Word2Vec, GloVe, SBERT, BERTopic.</li>
+                <li>SVM, validación cruzada, Kappa de Cohen.</li>
+                <li>Investigación publicada como paper en CISAP12.</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/danielfajardo1997/ai-psm-incident-classification" title="Ver código" target="_blank">
+                  <img src="images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="images/ai-architecture.png" class="work__image" alt="Arquitectura de modelo de IA tipo Transformer">
             </div>
           </div>
 
-          <div class="card__content">
-            <span class="card__badge">HTML · CSS · Flexbox</span>
-            <h3 class="card__title">Triple Espresso — Página de cafetería</h3>
-            <p class="card__description">
-              Landing page responsiva con HTML, CSS y Flexbox, siguiendo un diseño
-              de Figma. Publicado en GitHub Pages.
-            </p>
-          </div>
-
-        </article>
-
-        <!-- CARD 2: Around The US -->
-        <article class="card">
-
-          <div class="card__image card__image--placeholder">
-            <span class="card__tag">TypeScript · POO</span>
-            <div class="card__overlay"></div>
-
-            <div class="card__links">
-              <a href="https://github.com/danielfajardo1997/web_project_around_es" target="_blank">
-                <img src="images/github-icon.svg" alt="Ver código">
-              </a>
+          <!-- CSNE-SoC -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>CSNE-SoC — Motor neuronal sistólico en FPGA</h3>
+              <p class="work__text-bold">Resumen</p>
+              <p>
+                Co-diseño hardware/software de un arreglo sistólico configurable
+                de unidades MAC (Multiply-Accumulate) sobre un SoC-FPGA, con
+                integración de un procesador ARM Cortex-A9 y la fábrica FPGA vía
+                un puente AXI.
+              </p>
+              <p class="work__text-bold">Tecnologías</p>
+              <ul class="work__list">
+                <li>VHDL-2008, arquitectura sistólica de PEs.</li>
+                <li>Puente HPS-to-FPGA (AXI), software bare-metal en ARM.</li>
+                <li>Caracterización de desempeño en hardware real.</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/danielfajardo1997/CSNE-SoC" title="Ver código" target="_blank">
+                  <img src="images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="images/tang-nano-fpga.jpg" class="work__image" alt="Tarjeta de desarrollo FPGA">
             </div>
           </div>
 
-          <div class="card__content">
-            <span class="card__badge">TypeScript · POO</span>
-            <h3 class="card__title">Around The U.S.</h3>
-            <p class="card__description">
-              Aplicación web para explorar y compartir lugares emblemáticos de
-              EE. UU.: edición de perfil, tarjetas con "me gusta", eliminación y
-              vista de imagen completa. Construida con TypeScript y POO.
-            </p>
-          </div>
-
-        </article>
-
-        <!-- CARD 3: Rastreador de gastos -->
-        <article class="card">
-
-          <div class="card__image">
-            <img src="images/js-web.svg" alt="Proyecto rastreador de gastos">
-            <div class="card__overlay"></div>
-
-            <div class="card__links">
-              <a href="https://github.com/danielfajardo1997/web_project_expenses_es" target="_blank">
-                <img src="images/github-icon.svg" alt="Ver código">
-              </a>
+          <!-- AquaCartagena -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>AquaCartagena — Monitoreo de calidad del agua</h3>
+              <p class="work__text-bold">Resumen</p>
+              <p>
+                Sistema edge-IoT para monitoreo de calidad del agua en la Bahía
+                de Cartagena: nodos sensores ESP32 distribuidos, comunicación
+                LoRa y un gateway con Raspberry Pi que procesa y transmite los
+                datos vía 4G.
+              </p>
+              <p class="work__text-bold">Tecnologías</p>
+              <ul class="work__list">
+                <li>ESP32 + sensores multiparamétricos, comunicación LoRa.</li>
+                <li>Procesamiento edge en Python (Raspberry Pi, 4G).</li>
+                <li>InfluxDB Cloud y dashboards en Grafana.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="images/esp32-board.jpg" class="work__image" alt="Tarjeta de desarrollo ESP32">
             </div>
           </div>
 
-          <div class="card__content">
-            <span class="card__badge">JavaScript</span>
-            <h3 class="card__title">Rastreador de gastos</h3>
-            <p class="card__description">
-              Aplicación interactiva en JavaScript puro para registrar y
-              visualizar gastos personales organizados por categoría.
-            </p>
-          </div>
-
-        </article>
-
+        </div>
       </div>
     </section>
 
-    <h2 class="project-title" id="mis-proyectos">Mis proyectos</h2>
-    <!-- OTROS PROYECTOS (IA, hardware, investigación) -->
-    <section class="projects">
-
-      <div class="projects__grid">
-
-        <!-- CARD 4: Clasificación NLP de incidentes (CISAP12) -->
-        <article class="card">
-
-          <div class="card__image">
-            <img src="images/ai-architecture.png" alt="Arquitectura de un modelo de IA tipo Transformer">
-            <div class="card__overlay"></div>
-
-            <div class="card__links">
-              <a href="https://github.com/danielfajardo1997/ai-psm-incident-classification" target="_blank">
-                <img src="images/github-icon.svg" alt="Ver código">
-              </a>
-            </div>
+    <!-- ================= HABILIDADES / FRAMEWORKS ================= -->
+    <section class="frameworks" id="frameworks">
+      <div class="row">
+        <h2>Habilidades y herramientas</h2>
+        <div class="frameworks__logos">
+          <div class="frameworks__item">
+            <img src="images/html.svg" class="frameworks__logo" alt="HTML5">
+            <p class="frameworks__text">HTML5</p>
           </div>
-
-          <div class="card__content">
-            <span class="card__badge">Python · NLP · IA</span>
-            <h3 class="card__title">Clasificación de causas de accidentes industriales con NLP</h3>
-            <p class="card__description">
-              Pipeline de NLP (Word2Vec, GloVe, SBERT, BERTopic) para clasificar
-              automáticamente causas de accidentes industriales en reportes
-              eMARS. Investigación publicada como paper en CISAP12.
-            </p>
+          <div class="frameworks__item">
+            <img src="images/css.svg" class="frameworks__logo" alt="CSS">
+            <p class="frameworks__text">CSS</p>
           </div>
-
-        </article>
-
-        <!-- CARD 5: CSNE-SoC -->
-        <article class="card">
-
-          <div class="card__image">
-            <img src="images/tang-nano-fpga.jpg" alt="Tarjeta de desarrollo FPGA Sipeed Tang Nano">
-            <div class="card__overlay"></div>
-
-            <div class="card__links">
-              <a href="https://github.com/danielfajardo1997/CSNE-SoC" target="_blank">
-                <img src="images/github-icon.svg" alt="Ver código">
-              </a>
-            </div>
+          <div class="frameworks__item">
+            <img src="images/js.svg" class="frameworks__logo" alt="JavaScript">
+            <p class="frameworks__text">JavaScript</p>
           </div>
-
-          <div class="card__content">
-            <span class="card__badge">VHDL · FPGA · SoC</span>
-            <h3 class="card__title">CSNE-SoC — Motor neuronal sistólico en FPGA</h3>
-            <p class="card__description">
-              Co-diseño hardware/software de un arreglo sistólico configurable de
-              unidades MAC sobre un SoC-FPGA, con integración ARM Cortex-A9 +
-              fábrica FPGA vía AXI.
-            </p>
+          <div class="frameworks__item">
+            <img src="images/git.svg" class="frameworks__logo" alt="Git">
+            <p class="frameworks__text">Git</p>
           </div>
-
-        </article>
-
-        <!-- CARD 6: AquaCartagena -->
-        <article class="card">
-
-          <div class="card__image">
-            <img src="images/esp32-board.jpg" alt="Tarjeta de desarrollo ESP32 usada en los nodos sensores">
-            <div class="card__overlay"></div>
+          <div class="frameworks__item">
+            <img src="images/github.svg" class="frameworks__logo" alt="GitHub">
+            <p class="frameworks__text">GitHub</p>
           </div>
-
-          <div class="card__content">
-            <span class="card__badge">IoT · Edge · LoRa</span>
-            <h3 class="card__title">AquaCartagena — Monitoreo de calidad del agua</h3>
-            <p class="card__description">
-              Sistema edge-IoT con nodos ESP32 vía LoRa y gateway Raspberry Pi
-              para monitorear calidad del agua en la Bahía de Cartagena, con
-              almacenamiento en InfluxDB y dashboards en Grafana.
-            </p>
+          <div class="frameworks__item">
+            <img src="images/chatgpt.svg" class="frameworks__logo" alt="ChatGPT">
+            <p class="frameworks__text">ChatGPT</p>
           </div>
-
-        </article>
-
+        </div>
       </div>
     </section>
 
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>Sobre mí</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Desarrollador web junior con experiencia práctica creando
+              interfaces limpias y responsivas con HTML, CSS, JavaScript y
+              React, así como implementando lógica básica de back-end. He
+              trabajado en proyectos formativos que siguen procesos reales de
+              desarrollo, usando Git, GitHub y Figma.
+              <br /><br />
+              Además, investigo aplicaciones de IA y sistemas embebidos: desde
+              clasificación de texto con NLP hasta arquitecturas de hardware en
+              FPGA. Disfruto colaborar en equipo, mantener un código claro y
+              resolver problemas de forma estructurada.
+            </p>
+            <a href="/cv.pdf" download class="btn">Descargar CV</a>
+          </div>
+          <div class="about__photo-container">
+            <img class="about__photo" src="images/babuino.jpg" alt="Foto de Daniel Fajardo" />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer" id="contact">
-
-    <h2 class="footer__title">Contacto</h2>
-    <p class="footer__sub-title">danielfajardoc45@gmail.com</p>
-
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/daniel-fajardo-4b6673171" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-      <a href="https://github.com/danielfajardo1997" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Hablemos</h2>
+      <div class="contact__info">
+        <p>
+          ¿Buscas un desarrollador para tu próximo proyecto, o quieres
+          conversar sobre IA, hardware o investigación? Escríbeme, con gusto
+          conversamos.
+        </p>
+        <a href="mailto:danielfajardoc45@gmail.com" class="btn">danielfajardoc45@gmail.com</a>
+      </div>
     </div>
+  </section>
 
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/danielfajardo1997" title="GitHub" target="_blank">
+            <img src="images/github.svg" class="footer__social-image" alt="GitHub">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/daniel-fajardo-4b6673171" title="LinkedIn" target="_blank">
+            <img src="images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+          </a>
+        </li>
+      </ul>
+      <p>&copy; 2026 — Daniel Fajardo</p>
+    </div>
   </footer>
+
+  <a href="#top" class="back-to-top" title="Volver arriba">↑</a>
 
 </body>
 </html>
